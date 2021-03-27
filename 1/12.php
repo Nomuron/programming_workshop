@@ -29,7 +29,7 @@ function gen_mat_show_trans($rows, $columns) {
     }
 }
 
-if (isset($_POST["q"]) && isset($_POST["r"])) {
+if (is_numeric($_POST["q"]) && is_numeric($_POST["r"])) {
     $user_rows = $_POST["q"];
     $user_columns = $_POST["r"];
 
