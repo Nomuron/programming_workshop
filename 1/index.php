@@ -53,7 +53,7 @@
 				<input type="submit" value="Sprawdź trójkąt">
 			</form>
 			<?php include '6.php'; ?>
-		</p>
+        </p>
 		<p>
 			<text>Zadanie 1.7</text>
 			<form action="index.php" method="post">
@@ -62,6 +62,45 @@
 			</form>
 			<?php include '7.php'; ?>
 		</p>
+		<p>
+			<text>Zadanie 1.8</text>
+			<form action="index.php" method="post">
+				l: <input type="number" name="l">
+				m: <input type="number" name="m">
+				n: <input type="number" name="n">
+				<input type="submit" value="Posortuj">
+			</form>
+			<?php include '8.php'; ?>
+		</p>
+		<p>
+			<text>Zadanie 1.9</text>
+			<?php include '9.php'; ?>
+		</p>
+        <p>
+            <text>Zadanie 1.10</text>
+            <form action="index.php" method="post">
+                o: <input type="number" name="o">
+                <input type="submit" value="Pokaż rysunki">
+            </form>
+            <?php include '10.php'; ?>
+        </p>
+        <p>
+            <text>Zadanie 1.11</text>
+            <form action="index.php" method="post">
+                p: <input type="text" name="p">
+                <input type="submit" value="Sprawdź pangram">
+            </form>
+            <?php include '11.php'; ?>
+        </p>
+        <p>
+            <text>Zadanie 1.12</text>
+            <form action="index.php" method="post">
+                q: <input type="number" min="1" name="q">
+                r: <input type="number" min="1" name="r">
+                <input type="submit" name="sub4" value="Pokaż transpozycje">
+            </form>
+            <?php include '12.php'; ?>
+        </p>
 	</body>
 </html>
 
