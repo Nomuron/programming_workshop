@@ -53,12 +53,20 @@
 
                     $information = array(
                             'number of people' => $number_of_people,
-                            'first name' => $first_name, $last_name,
+                            'first name' => $first_name,
+                            'last name' => $last_name,
                             'email' => $email,
                             'address' => $address,
                             'card number' => $card_number,
                             'check-in date time' => $check_in_date_time,
                             'number of days' => $number_of_days);
+
+                    if (!file_exists("./3.csv")) {
+                        $fp_title = fopen('3.csv', 'a');
+                        fputcsv($fp_title, array("number of people", "first name", "last name", "email", "address",
+                            "card number", "check-in date time", "number of days"), ";");
+                        fclose($fp_title);
+                    }
 
                     if (!$fp = fopen('3.csv', 'a')) {
                         echo "Can't open CSV file.";
