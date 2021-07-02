@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+
+.fighter_button {
+    margin: 0 30px;
+}
+
+.fighter_button_2 {
+    margin: 15px 10px;
+}
+
+.register_fighter_form {
+    margin-top: 40px;
+}
